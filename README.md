@@ -128,6 +128,7 @@ If you have problems:
 
 ## License
 
+Terminus Media Player is based on Jellyfin Media Player.
 Jellyfin Media Player is licensed under GPL v2. See the ``LICENSE`` file.
 Licenses of dependencies are summarized under ``resources/misc/licenses.txt``.
 This file can also be printed at runtime when using the ``--licenses`` option.
