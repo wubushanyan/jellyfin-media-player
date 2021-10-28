@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.github.iwalton3.jellyfin-media-player</id>
-  <name>Jellyfin Media Player</name>
+  <id>com.github.Terminus-Media.jellyfin-media-player</id>
+  <name>Terminus-Media Player</name>
   <summary>Desktop client for Jellyfin media server</summary>
-  <developer_name>Ian Walton</developer_name>
+  <developer_name>Terminus-Media Maintainers</developer_name>
   <project_license>GPL-2.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
-  <url type="homepage">https://github.com/iwalton3/jellyfin-media-player</url>
-  <url type="help">https://github.com/iwalton3/jellyfin-media-player/blob/master/README.md</url>
-  <url type="bugtracker">https://github.com/iwalton3/jellyfin-media-player/issues</url>
+  <url type="homepage">https://github.com/Terminus-Media/jellyfin-media-player</url>
+  <url type="help">https://github.com/Terminus-Media/jellyfin-media-player/blob/master/README.md</url>
 
   <provides>
     <binary>jellyfinmediaplayer</binary>
