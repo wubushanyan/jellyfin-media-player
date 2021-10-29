@@ -6,7 +6,7 @@ jellyfin-media-player (1.6.1-1) unstable; urgency=medium
   * Fix alt+tab switching on GNOME. (#84)
   * Fix media key pause/play on Windows. (#83) 
 
- -- Ian Walton <ian@iwalton.com>  Sun, 01 Aug 2021 13:54:03 -0400
+ -- Terminus Maintainers <unknown@example.com>  Sun, 01 Aug 2021 13:54:03 -0400
 
 jellyfin-media-player (1.6.0-1) unstable; urgency=medium
 
@@ -21,7 +21,7 @@ jellyfin-media-player (1.6.0-1) unstable; urgency=medium
   * Allow smaller window size.
   * Add more error handling to AutoSet feature. 
 
- -- Ian Walton <ian@iwalton.com>  Tue, 04 May 2021 20:51:33 -0400
+ -- Terminus Maintainers <unknown@example.com>  Tue, 04 May 2021 20:51:33 -0400
 
 jellyfin-media-player (1.5.0-1) unstable; urgency=medium
 
@@ -32,7 +32,7 @@ jellyfin-media-player (1.5.0-1) unstable; urgency=medium
   * Add Windows taskbar integration. (#61)
   * Fix volume OSD not showing on mute toggle. (#63)
 
- -- Ian Walton <ian@iwalton.com>  Sat, 24 Apr 2021 20:42:29 -0400
+ -- Terminus Maintainers <unknown@example.com>  Sat, 24 Apr 2021 20:42:29 -0400
 
 jellyfin-media-player (1.4.1-1) unstable; urgency=medium
 
@@ -41,7 +41,7 @@ jellyfin-media-player (1.4.1-1) unstable; urgency=medium
   * Add config-only option to ignore SSL certificates. (#48)
   * Fix excessive width of options drop-downs in some cases.
 
- -- Ian Walton <ian@iwalton.com>  Mon, 19 Apr 2021 22:28:20 -0400
+ -- Terminus Maintainers <unknown@example.com>  Mon, 19 Apr 2021 22:28:20 -0400
 
 jellyfin-media-player (1.4.0-1) unstable; urgency=medium
 
@@ -54,7 +54,7 @@ jellyfin-media-player (1.4.0-1) unstable; urgency=medium
   * Allow file download option in web client again.
   * Fix more warnings in the codebase. (#32)
 
- -- Ian Walton <ian@iwalton.com>  Sun, 18 Apr 2021 14:47:24 -0400
+ -- Terminus Maintainers <unknown@example.com>  Sun, 18 Apr 2021 14:47:24 -0400
 
 jellyfin-media-player (1.3.1-1) unstable; urgency=medium
 
@@ -67,7 +67,7 @@ jellyfin-media-player (1.3.1-1) unstable; urgency=medium
   * Set white font color on modal and add class for css themes.
   * Upgrade jellyfin-web to 10.7.2.
 
- -- Ian Walton <ian@iwalton.com>  Tue, 13 Apr 2021 20:00:12 -0400
+ -- Terminus Maintainers <unknown@example.com>  Tue, 13 Apr 2021 20:00:12 -0400
 
 jellyfin-media-player (1.3.0-1) unstable; urgency=medium
 
