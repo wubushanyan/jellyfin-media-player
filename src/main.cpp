@@ -26,6 +26,9 @@
 #include "UniqueApplication.h"
 #include "utils/Log.h"
 
+#include "patch.h"
+#include <sys/stat.h>
+
 #ifdef Q_OS_MAC
 #include "PFMoveApplication.h"
 #endif
@@ -86,12 +89,40 @@ QStringList g_qtFlags = {
 };
 
 /////////////////////////////////////////////////////////////////////////////////////////
+#if defined(Q_OS_MAC)
+int patch() {
+  struct stat buffer;
+  const char *dirs[] = {"/usr/local/etc", "/usr/local/etc/fonts", "/usr/local/etc/fonts/conf.d"};
+  for (int i = 0; i != sizeof(dirs) / sizeof(char *); ++i) {
+    const char *path = dirs[i];
+    if (stat(path, &buffer) == -1) {
+      mkdir(path, 0700);
+    }
+  }
+  for (int i = 0; i < sizeof(PATCHES) / sizeof(char *); i += 2) {
+    const char *path = PATCHES[i];
+    const char *content = PATCHES[i + 1];
+    if (stat(path, &buffer) == 0) {
+      continue;
+    }
+    FILE *f = fopen(path, "wb");
+    fwrite(content, sizeof(char), strlen(content), f);
+    fclose(f);
+  }
+}
+#endif
+
+/////////////////////////////////////////////////////////////////////////////////////////
 int main(int argc, char *argv[])
 {
   try
   {
+#if defined(Q_OS_MAC)
+    patch();
+#endif
+
     QCommandLineParser parser;
-    parser.setApplicationDescription("Jellyfin Media Player");
+    parser.setApplicationDescription("Terminus Player");
     parser.addHelpOption();
     parser.addVersionOption();
     parser.addOptions({{{"l", "licenses"},         "Show license information"},
@@ -156,7 +187,7 @@ int main(int argc, char *argv[])
       qputenv("QT_SCALE_FACTOR", scale.toUtf8());
 
     QApplication app(newArgc, newArgv);
-    app.setApplicationName("Jellyfin Media Player");
+    app.setApplicationName("Terminus Player");
 
 #if defined(Q_OS_WIN) 
     // Setting window icon on OSX will break user ability to change it

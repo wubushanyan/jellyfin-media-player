@@ -1,1 +1,1 @@
-start "" "JellyfinMediaPlayer.exe" "--disable-gpu"
+start "" "TerminusPlayer.exe" "--disable-gpu"

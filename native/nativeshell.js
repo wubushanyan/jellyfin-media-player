@@ -62,7 +62,7 @@ window.NativeShell = {
 
 function getDeviceProfile() {
     return {
-        'Name': 'Jellyfin Media Player',
+        'Name': 'Terminus Player',
         'MusicStreamingTranscodingBitrate': 1280000,
         'TimelineOffsetSeconds': 5,
         'TranscodingProfiles': [
@@ -124,7 +124,7 @@ window.NativeShell.AppHost = {
     getDeviceProfile,
     getSyncProfile: getDeviceProfile,
     appName() {
-        return "Jellyfin Media Player";
+        return "Terminus Player";
     },
     appVersion() {
         return navigator.userAgent.split(" ")[1];
@@ -159,12 +159,13 @@ async function showSettingsModal() {
 
     const title = document.createElement("h3");
     title.className = "formDialogHeaderTitle";
-    title.textContent = "Jellyfin Media Player Settings";
+    title.textContent = "Terminus Player Settings";
     modalHeader.appendChild(title);
     
     const modalContents = document.createElement("div");
     modalContents.className = "formDialogContent smoothScrollY";
     modalContents.style.paddingTop = "2em";
+    modalContents.style.paddingBottom = "10em";
     modalContainer2.appendChild(modalContents);
     
     for (let section of settings) {

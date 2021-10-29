@@ -25,7 +25,7 @@ class jmpUpdatePlugin {
                 try {
                     await confirm({
                         title: "Update Available",
-                        text: `Jellyfin Media Player version ${version} is available.`,
+                        text: `Terminus Player version ${version} is available.`,
                         cancelText: "Ignore",
                         confirmText: "Download"
                     });

@@ -226,7 +226,7 @@ QString SystemComponent::debugInformation()
   QString debugInfo;
   QTextStream stream(&debugInfo);
 
-  stream << "Jellyfin Media Player\n";
+  stream << "Terminus Player\n";
   stream << "  Version: " << Version::GetVersionString() << " built: " << Version::GetBuildDate() << "\n";
   stream << "  Web Client Version: " << Version::GetWebVersion() << "\n";
   stream << "  Web Client URL: " << SettingsComponent::Get().value(SETTINGS_SECTION_PATH, "startupurl").toString() << "\n";
