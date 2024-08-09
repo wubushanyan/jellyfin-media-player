@@ -5,6 +5,7 @@ on:
     branches:
       - release
       - test
+      - master
 jobs:
   build-mac:
     runs-on: macOS-latest
