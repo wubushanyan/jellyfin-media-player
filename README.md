@@ -1,6 +1,6 @@
 # Terminus Media Player
 
-Desktop client using jellyfin-web with embedded MPV player. Supports Windows, Mac OS,
+Desktop client using jellyfin-web with embedded MPV player. Supports Windows, Mac OS, 
 and Linux. Media plays within the same window using the jellyfin-web interface unlike
 Jellyfin Desktop. Supports audio passthrough. Based on [Plex Media Player](https://github.com/plexinc/plex-media-player).
 
